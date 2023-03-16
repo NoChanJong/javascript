@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button onclick="alert('버튼클릭')">inline - 클릭</button>
+  <button onclick='display()'>함수호출 - 클릭</button>
+  <button id="callback">callback함수 - 클릭</button>
+  <button id="arrow">화살표함수 - 클릭</button>
+
+  <script>
+    // 콜백함수 callback function
+    // 다른 함수의 인수(파라미터)로 사용하는 함수를 말한다.
+    function display() {
+      alert("버튼을 클릭했습니다.");
+    }
+
+    const btn = document.querySelector('#callback'); 
+    btn.addEventListener('click', display);
+
+    const btn1 = document.querySelector('#arrow');
+    // btn1.addEventListener('click', function() { alert("화살표함수-클릭") })
+    // btn1.addEventListener('click', () => alert("화살표함수-클릭"))
+    btn1.addEventListener('click', () => { 
+      document.write('실행문1');
+      document.write('실행문2');
+      document.write('실행문3');
+      document.write('실행문4');
+      alert('화살표함수 호출!!');
+    }) // 실행될게 많을시 () => {}로 선언함.
+
+    function fn01(name, age) {
+      alert(`안녕하세요? ${name}님. 나이가 ${age} 이군요`);
+    }
+
+    function getInfo(aaa) {
+      let userName = '홍길동';
+      let userAge = 1000;
+      aaa(userName, userAge);
+    }
+    getInfo(fn01);
+
+    /*
+      콜백함수는 간단하게 다른 함수에 매개변수로 넘겨준 함수를 말한다.
+      매개변수로 넘겨받은 함수는 일단 넘겨받고, 때가되면 나중에 호출한다는것이 콜백함수의 개념이다.
+
+      콜백함수는 여러 함수들을 선언하고, 어느 한 함수가 실행될 떄 상황에 따라 필요한 다른
+      함수를 실행하고 싶을 떄 활용할 수 있다.
+
+      eventlistener : DOM객체에서 이벤트가 발생할 경우 해당 이벤트 처리 핸들러를 추가할 수 있는
+      오브젝트다. 
+      이벤트 리스너를 이용하면 특정DOM에 JavaScript 이벤트가 발생할 때 특정 함수를 호출한다.
+
+      이벤트 리스너 선언방법
+      DOM객체.addEventListener(이벤트명, 실행할 함수명, 옵션)
+
+      이벤트 리스너 삭제하는 방법
+      DOM객체.removeEventListener(이벤트명, 실행할 함수명);
+    */
+  </script>
+</body>
+</html>

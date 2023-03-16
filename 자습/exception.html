@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    window.onload = () => {
+      let count = 0;
+      let result = null;
+      try {
+        result = result / count;
+        document.write(`나누기 결과 = ${result}`);
+      } catch (e) {
+        document.write(`나누기 연산은 0으로 나눌 수가 없습니다.`);
+      }
+      result = 1000 / count;
+
+      console.log('아주 중요한 처리');
+    }
+  </script>
+  <script>
+    function getMonthName(mo) {
+      mo = mo - 1; 
+      let months = ['jan', 'feb', 'mar', 'apr', 'may', 'jun'];
+      if (months[mo]) {
+        return months[mo];
+      } else {
+        throw `${mo}월의 값은 1 ~ 12까지 입니다.`;
+      }
+    }
+    
+    let myMonth = 11;
+    try {
+      monthName = getMonthName(myMonth);
+      console.log(`입력한 달은 ${monthName}월 입니다.`);
+    } catch (e) {
+      monthName = 'unknown';
+      console.log(e);
+    } finally {
+      console.log('프로그램이 종료되었습니다.');
+    }
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

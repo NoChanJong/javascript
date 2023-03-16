@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/homepage.css">
+  <script src="./js/homepage.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Lobster&display=swap" rel="stylesheet">
+  <title>Home Page</title>
+</head>
+<body>
+  <!-- menu bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a href="#" class="navbar-brand">Apple</a>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#product" class="nav-item nav-link active">Product <span class="sr-only">(current)</span></a></li>
+          <li><a href="#policy" class="nav-item nav-link">Policy</a></li>
+          <li><a href="#th" class="nav-item nav-link">Technology</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- carousel -->
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- indicator -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+    <!-- 동그란 상자 -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="./img/iphone.jfif" alt="">
+      </div>
+      <div class="item">
+        <img src="./img/airpods.jfif" alt="" >
+      </div>
+      <div class="item">
+        <img src="./img/apple_watch.jfif" alt="" >
+      </div>
+      <div class="item">
+        <img src="./img/mac.jfif" alt="">
+      </div>
+    </div>
+
+    <!-- control button -->
+    <a href="#myCarousel" class="left carousel-control" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a href="#myCarousel" class="right carousel-control" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+  <!-- section -->
+  <div id="contents">
+    <div id="product" class="container text-center">
+      <h3>Apple 주요 제품들</h3>
+      <h4>IPHONE</h4>
+      <p>
+        iPhone 1세대는 2007년 1월 9일 "<맥월드 2007>"을 통해 최초로 발표되었다. 출시 초기만 해도 Apple의 기행 정도로 여겨졌으나 곧 대대적인 성공을 거둬 전세계적으로 스마트폰 열풍이 몰아치게 되었다.  
+        아난드텍 리뷰는 아이폰이 마치 "스타트렉에서 튀어나온 듯한 기기."처럼 생겼다고 평가하기도 했다.
+      </p><br>
+
+      <h4>MAC</h4>
+      <p>
+        Apple에서 만든 개인용 컴퓨터 브랜드. 풀네임은 Macintosh이며 그 유래는 Apple의 엔지니어이자 Macintosh 프로젝트의 최초 구상자였던 제프 래스킨이 좋아하는 사과 품종이 이거라서 이런 이름이 붙었다고. 
+        스티브 잡스는 처음에는 이 이름이 별로 마음에 들지 않았는지 "지성을 위한 자전거". 줄여서 "자전거"(!)라는 이름을 밀기도 했다고 한다. 나중에는 컨설팅 회사에다 돈 왕창 주고 새 이름을 받아 왔는데 그 이름이라는게 "Apple 40"이라든가 "Apple Allegro" 같은 이름이었고, 
+        결국 잡스는 저런 이름은 못 붙이겠다면서 "Macintosh"라는 이름을 최종 승인하고 Mcintosh라는 이름을 쓰던 오디오 회사에 가서 "Macintosh"라는 이름을 사용할 수 있는 권리까지 얻어오게 된다.
+        하지만 매킨토시의 영어 철자가 지나치게 길고 모토로라가 새로 개발한 POWER CPU 칩셋을 적용한 매킨토시가 출시되던 90년대 중반부터 상품명이 Power Macintosh가 되면서 제품명은 더욱 길어져 버렸다. 
+        이때문인지 줄임 표현인 Power Mac이라는 애칭 표현이 유저들 사이에서나 관련 출판물에서 자주 사용되기 시작하였고, 1998년 아이맥이 출시되면서 애플은 공식적으로 iMac은 인터넷용 매킨토시를 뜻힌다고 발표했다. 
+        자연스럽게 나중에 나온 파워 메킨토시 제품군들은 간단하게 PowerMac G3, PowerMac G4... 등으로 불리웠고. 이러한 경향은 아예 파워북으로 불리던 노트북들도 인텔 CPU를 도입하는 시점부터 자연스에 MacBook 으로 제품명을 바꾸게 되는 이유가 된다. 
+        이로써 매킨토시라는 이름과 무지개색으로 만들어진 애플 로고는 90년대 애플 컴퓨터를 상징하는 레트로 코드로 남게 된다. [4]
+      </p><br>
+
+      <h4>Airpods(Max)</h4>
+      <p>
+        Apple에서 만든 개인용 컴퓨터 브랜드. 풀네임은 Macintosh이며 그 유래는 Apple의 엔지니어이자 Macintosh 프로젝트의 최초 구상자였던 제프 래스킨이 좋아하는 사과 품종이 이거라서 이런 이름이 붙었다고. 
+        스티브 잡스는 처음에는 이 이름이 별로 마음에 들지 않았는지 "지성을 위한 자전거". 줄여서 "자전거"(!)라는 이름을 밀기도 했다고 한다. 나중에는 컨설팅 회사에다 돈 왕창 주고 새 이름을 받아 왔는데 그 이름이라는게 "Apple 40"이라든가 "Apple Allegro" 같은 이름이었고, 
+        결국 잡스는 저런 이름은 못 붙이겠다면서 "Macintosh"라는 이름을 최종 승인하고 Mcintosh라는 이름을 쓰던 오디오 회사에 가서 "Macintosh"라는 이름을 사용할 수 있는 권리까지 얻어오게 된다.
+        하지만 매킨토시의 영어 철자가 지나치게 길고 모토로라가 새로 개발한 POWER CPU 칩셋을 적용한 매킨토시가 출시되던 90년대 중반부터 상품명이 Power Macintosh가 되면서 제품명은 더욱 길어져 버렸다. 
+        이때문인지 줄임 표현인 Power Mac이라는 애칭 표현이 유저들 사이에서나 관련 출판물에서 자주 사용되기 시작하였고, 1998년 아이맥이 출시되면서 애플은 공식적으로 iMac은 인터넷용 매킨토시를 뜻힌다고 발표했다. 
+        자연스럽게 나중에 나온 파워 메킨토시 제품군들은 간단하게 PowerMac G3, PowerMac G4... 등으로 불리웠고. 이러한 경향은 아예 파워북으로 불리던 노트북들도 인텔 CPU를 도입하는 시점부터 자연스에 MacBook 으로 제품명을 바꾸게 되는 이유가 된다. 
+        이로써 매킨토시라는 이름과 무지개색으로 만들어진 애플 로고는 90년대 애플 컴퓨터를 상징하는 레트로 코드로 남게 된다. [4]
+      </p><br>
+
+      <h4>Apple Watch</h4>
+      <p>
+        스마트 워치뿐만 아니라 손목시계 역사상 유례가 없는 성공을 거둔 제품으로, 2021년 기준 Apple의 시계 시장 점유율은 스위스 시계 산업 전체를 큰 격차로 앞지른 상황이며, 
+        Apple Watch는 총합 1억대가 판매되며 전 세계에서 역사적으로 가장 많이 팔린 시계가 되었다.
+        macOS나 iOS처럼 Darwin 기반이다. 또한 2015년 4월에 처음 출시되어, 2023년 기준 여덟 번째 버전인 Apple Watch Series 8가 있다.
+        기본적으로는 "본체"에 해당하는 iPhone과 연동하여 각종 정보와 기능을 제공하는 단말이다. iPad와는 연동되지 않는다. 
+        iPad가 Wi-Fi + Cellular 모델이어도 마찬가지니 주의. 2017년에 최초로 셀룰러망에 자체 접속할 수 있는 Apple Watch Series 3 부터는 GPS + Cellular라는 모델이 출시되어 독립된 스마트 기기로서의 포지셔닝을 도모하였다. 
+        허나 GPS + Cellular 모델 역시 페어링된 iPhone이 없으면 기능의 상당부분을 이용하기 힘들다.
+      </p>
+    </div>
+
+    <div id="policy" class="container text-center">
+      <h3>Apple 주요 친환경 정책</h3>
+      <p>
+        제품과 서비스는 물론 정책에 논란과 말이 많은 Apple이지만, 고객과 제품을 대하는 깐깐함을 환경을 대하는 태도와 하청업체의 고용 및 인권 실태에까지 적용하고 있기 때문에 친환경 정책을 선두하는 기업들 중 하나로 꼽히고 있다.
+        2008년 이후로, 매년 환경 경과 보고서와 개별제품에 대한 환경성적표를 게시하고 있으며, 환경페이지에서 확인이 가능하다. 팀 쿡 CEO 이후로, 친환경 정책의 비중이 커졌으며, 매 키노트에서 환경에 대한 부분을 강조하고 있다.
+        2014년 4월, 팀 쿡 CEO가 직접 등장하여 "Apple의 모든 데이터센터는 100% 재생가능 에너지로 작동한다"고 밝히며, "다른 기업들이 Apple의 이런 (친환경적) 정책 또한 카피해주길 바란다"는 내용을 발표했다.
+        또한, 그린피스가 발표한 그린인터넷 리포트에 의하면, Apple의 클린 에너지 사용 비율은 무려 100%로 타 경쟁 기업들에 비해 압도적으로 높다. 두 번째로 클린 에너지 비율이 높은 기업들이 Yahoo, Google, Facebook 등인데 여기는 4-50%대 또는 그 이하이므로 (그것이 마케팅 목적이든 아니든 간에)[23] Apple이 친환경적 행보 면에서 분명하게 선두에 위치하는 것은 사실이라고 볼 수 있다.
+        <br>
+        2016년초 부터 Google 데이터 센터를 통해 전송되는 iMessage가 100% 재생 에너지로 가동되고 있다.
+        2018년, 전 세계에 위치한 Apple 사무실, 리테일 매장, 데이터 센터를 포함한 모든 곳이 100% 청정에너지로 작동되는 데에 성공했다고 밝혔다.
+        2018년 리프레시된 MacBook Air는 100% 재활용 알루미늄으로 제작된다고 한다. 2015년 출시된 12형 MacBook부터 제품 포장을 비롯한 구성품을 베릴륨, PVC, 브롬이 포함되지 않은 것으로 교체한 노력이 절정에 다다른 셈이다.
+      </p>
+    </div>
+
+    <div id="th" class="container text-center">
+      <h3>Apple 주요 기술</h3>
+      <p>
+        하드웨어 기술로는 Apple Silicon,
+        Ceramic Shield,
+        Force Touch,
+        MagSafe,
+        LTPO 디스플레이,
+        Retina 디스플레이,
+        True Tone 디스플레이,
+        Taptic Engine,
+        3D Touch들이 있고
+        소프트웨어 기술로는 Apple 연속성,
+        AirPlay,
+        AirDrop,
+        Apple ProRes,
+        AIFF,
+        Apple Lossless,
+        Handoff,
+        긴급 구조 요청,
+        Rosetta
+      </p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script>
+    // jquery 기본선택자 = ex) $('h1').css('color', 'red');
+    $(function() {
+      $('h1').css('color', 'red'); // getElementTagName('h1').css()
+      $('p').css('color', 'green');
+      $('#taget').css('color', 'orange');
+      $('h1#taget').css('color', 'mediumseagreen');
+    });
+  </script>
+  <!-- <style>
+    h1 {
+      color: red;
+    }
+    h1#taget {
+      color: green;
+    }
+  </style> -->
+  <title>Document</title>
+</head>
+<body>
+  <h1>
+    2022~23 유럽축구연맹 챔피언스리그(UCL) 16강 탈락으로 사실상 
+    올 시즌 무관이 확정된 토트넘 홋스퍼가 안토니오 콘테 감독의 후임자를 물색하고 나섰다.
+  </h1>
+  <p>
+    영국 스카이 스포츠는 10일(한국시간) “콘테 감독이 
+    선수단으로부터 신뢰를 잃어가고 있다. 토트넘도 콘테 감독과의 계약 연장에 대한 계획이 없다”
+    이어 “몇몇 토트넘 선수들은 포체티노 감독에게 팀으로 돌아오길 간청하고 있다”고 덧붙였다.
+  </p>
+  <p id="taget">
+    이에 토트넘은 콘테 감독과의 1년 계약 연장 옵션을 발동하지 않고 새로운 지도자를 물색 중이다. 첫 번째 후보로는 지난 2014년부터 
+    2019년까지 토트넘을 이끈 포체티노 전 감독이다. 포체티노 전 감독은 팀을 떠난 뒤에도 토트넘과 좋은 관계를 유지하고 있다.
+  </p>
+  <h1 id="taget">2022~23 유럽축구연맹 챔피언스리그(UCL) 16강 탈락</h1>
+</body>
+</html>

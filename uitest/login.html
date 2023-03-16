@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/login.css">
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/jquery.smooth-scroll.min.js"></script> 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<title>로그인 | MyHomePage</title>
+</head>
+<body>
+	<div id="wrap" class="s_point">
+
+		<div id="container" id="layout0">
+
+			<div class="bodytext_area box_inner">
+				<div class="login_wrap">
+					<h1 class="loginTit"><a href="#"><img src="./img/apple_login.jfif" alt="APPLE" style="width: 100%"></a></h1>
+					
+					<div class="container-fluid">
+						<h3>로그인</h3>
+						<form action="http://127.0.0.1:5500/uitest/myhomepage.html#th">
+							<div class="input-group">
+								<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+								<input type="email" class="form-control" id="email" name="eamil">
+							</div>
+							<div class="input-group">
+								<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+								<input type="password" class="form-control" id="pwd" name="pwd">
+							</div>
+							<div class="login_btn">
+								<button type="submit" class="btn btn-primary">로그인</button>
+							</div>
+						</form>
+					</div>
+					<ul class="login_list">
+						<li class="kakao"><a href="javascript:;"><img src="./img/ico_kakao.png" alt=""><strong>카카오톡</strong> 로그인</a></li>
+						<li class="facebook"><a href="javascript:;"><img src="./img/ico_face.png" alt=""><strong>페이스북</strong> 로그인</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

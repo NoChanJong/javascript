@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+  /*  
+			실습 1. 아래와 같이 별표 피라미드를 출력
+			*
+			**
+			***
+			****
+			*****
+			******
+			*******		
+			
+      실습2.
+		     *
+		    **
+		   ***
+		  ****
+		 *****
+		 공란 : &npsp, 공란감소 for
+		 별
+		/*
+		 실습3.
+		 *****
+		 ****
+		 ***
+		 **
+		 *	
+
+		 실습4.
+		 *****
+		  ****
+		   ***
+		    **
+		     *    
+         
+		 실습5.   
+	      *
+	     ***
+	    *****
+	   *******
+	  *********	    
+    
+실습 6.
+	 *********
+	  *******
+	   *****
+	    ***
+	     *	
+
+실습7. : 실습5,6를 한번에 실행
+	     *
+	    ***
+	   *****
+	  *******
+	 *********
+	  *******
+	   *****
+	    ***
+	     *
+		*/
+    
+  // 실습 1
+  for(let i = 0; i < 7; i++) {
+    for(let j = 0; j<=i; j++){
+      document.write('★');
+    }
+    document.write('<br>');
+  }
+  document.write('<hr>');
+
+  // 실습 2
+  for(let i=0; i < 5; i++) {
+    for(let j=5; j > i; j--) {
+      
+      document.write(`☆`);
+    }
+    for(let j=0; j <= i; j++) {
+      document.write('★');
+    }
+    document.write('<br>');
+  }
+  document.write('<hr>');
+  
+  // 실습 3
+  for(let i=0; i < 5; i++) {
+    for(let j=5; j > i; j--) {
+      document.write('★');
+    }
+    document.write('<br>');
+  }
+  document.write('<hr>');
+  
+  // 실습 4
+  for(let i=0; i<5; i++) {
+    for(let j=0; j<=i; j++) {
+      document.write('☆');
+    }
+    for(let j=5; j > i; j--) {
+      document.write('★');
+    }
+    document.write('<br>');
+  }
+  document.write('<hr>');
+  
+  // 실습 5
+  for(let a = 0; a < 5; a++) {
+    for(let b=4; b > a; b--) {
+      document.write('☆');
+    }
+    for(let b=0; b <= a; b++) {
+      document.write('★');
+    }
+    for(let b=1; b <= a; b++) {
+      document.write('★');
+    }
+    document.write('<br>');
+  }
+  document.write('<hr>');
+  
+  // 실습 6
+  for(let a=0; a < 5; a++) {
+    for(let b=0; b<a; b++) {
+      document.write('☆');
+    }
+    for(let b=5; b > a; b--) {
+      document.write('★');
+    }
+    for(let b=4; b>a; b--) {
+      document.write('★');
+    }
+    document.write('<br>');
+  }
+  document.write('<hr>');
+  
+  // 실습 7
+  for(let a = 0; a < 5; a++) {
+    for(let b=4; b > a; b--) {
+      document.write('☆');
+    }
+    for(let b=0; b <= a; b++) {
+      document.write('★');
+    }
+    for(let b=1; b <= a; b++) {
+      document.write('★');
+    }
+    document.write('<br>');
+  }
+  for(let a=1; a < 5; a++) {
+    for(let b=0; b<a; b++) {
+      document.write('☆');
+    }
+    for(let b=5; b > a; b--) {
+      document.write('★');
+    }
+    for(let b=4; b>a; b--) {
+      document.write('★');
+    }
+    document.write('<br>');
+  }
+  </script>
+</body>
+</html>

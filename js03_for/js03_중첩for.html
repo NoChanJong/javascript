@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    // 중첩 for(nested for)문
+    // for() {
+    //    for() {
+    //      for() {
+    //        }
+    //    }
+    // }
+    
+    for(i=0; i < 5; i++) {
+      for(j=5; j > i; j--) {
+        document.write(`☆`); // 2) 10번, 4) 10번....
+      }
+      for(k=0; k < i; k++) {
+        document.write(`★`);
+      } // 2) 10번, 4) 10번....
+      for(k=0; k <= i; k++) {
+        document.write(`★`); // 2) 10번, 4) 10번....
+      }document.write('<br>');
+    }
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

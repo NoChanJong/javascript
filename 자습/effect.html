@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <title>Document</title>
+  <script>
+    /*
+      jQuery Effect
+
+      A. effect method
+
+      show() : 문서객체 보이게하기
+      hide() : 문서객체 숨기기
+      toggle(): show와 hide 번갈아서 수행
+      slideDown(): 슬라이드효과 보이기
+      slideUp() : 슬라이드효과 감추기
+      slideToggle: slideDown과 slideUp을 번갈아 수행
+      fadeIn() : 서서히 보이기
+      fadeOut() : 서서히 감추기
+      fadeToggle() : fadeIn, fadeOut 번갈아 수행
+
+      B. effect 메서드 4가지 형태
+
+      1. $(선택자).method()
+      2. $(선택자).method(speed) : 'slow', 'normal', 'fast', 숫자(ms)
+      3. $(선택자).method(speed, 콜백함수) : 효과가 수행되는 동안 수행할 함수(콜백함수)를 지정
+          함수 수행결과가 리턴
+      4. $(선택자).method(speed, easing, 콜백함수) : easing 애니메이션효과 적용
+    */
+    $(function() {
+      $('button').click(() => {
+        $('.page').slideToggle(500, 'swing');
+      })
+    })
+  </script>
+</head>
+<body>
+  <button>jQuery Effect - toggle</button>
+  <div class="page">
+    <h1>'맨유 날벼락' 2004년생 미친재능 부상 심각, 3월 이탈 가능성</h1>
+    <p>
+      영국 언론 메트로는 14일(이하 한국시각) '가르나초의 부상이 예상보다 심각할 수 있다. 
+      가르나초는 3월 A매치에 나서지 못할 것으로 보인다'고 보도했다.
+    </p>
+  </div>
+</body>
+</html>

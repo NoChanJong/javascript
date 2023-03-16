@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/Dark-Hive/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <title>Document</title>
+  <style>
+    h1 {
+      text-align: center;
+    }
+    #button {
+      padding: 5px;
+      margin: 0;
+      text-align: center;
+    }
+  </style>
+
+  <script>
+    $(function() {
+      $('#button').hover(
+        function () { $(this).addClass('ui-state-hover')},
+        function () { $(this).removeClass('ui-state-hover')}
+      )
+
+      $('#button').click(function() {
+        $(this).toggleClass('ui-state-active')
+      })
+
+      $('h1').hover(
+        function () { $(this).addClass('ui-state-hover')},
+        function () { $(this).removeClass('ui-state-hover')}
+      )
+    })
+  </script>
+</head>
+<body>
+  <div id="button" class="box ui-state-default ui-coner-all">
+    <p>콘테 감독은 2021-22시즌 누누 에스피리투 산투 감독의 뒤를 이어 토트넘 지휘봉을 잡았다. 중위권에 허덕이던 팀을 살리는 데 힘 쏟았다. 토트넘 첫 시즌 기세는 매서웠다. 부진에 빠진 해리 케인(29)도 콘테 감독 체제에서 되살아났다. 손흥민(30)은 특급 골잡이로 거듭났다. 
+      토트넘은 시즌 막바지 아스널을 극적으로 제치고 4위를 차지했다. 손흥민은 아시아 최초 골든 부트를 받으며 빛났다.</p>
+  </div>
+
+  <button id="button" class="box ui-state-default ui-coner-all">Button</button>
+</body>
+</html>

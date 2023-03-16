@@ -1,0 +1,56 @@
+body {
+  color: #af999946;
+  background-image: url(../img/star.jfif);
+}
+
+.container {
+  padding: 80px 120px;
+}
+.navbar {
+  font-family: 'Lobster', sans-serif, 'cursive';
+  margin-bottom: 0;
+  background-color: black;
+  font-size: 28px;
+  border: 0;
+  letter-spacing: 5px;
+}
+.navbar li a, .navbar .navbar-brand {
+  color: white;
+  font-size: 40px;
+}
+.navbar-nav li a:hover {
+  color: black;
+  background-color: #eeeeee16;
+}
+.navbar-nav li:active a {
+  color: white;
+  background-color: #a9b9c946;
+}
+
+.carousel-inner img {
+  width: 1200px;
+  height: auto;
+  margin: auto;
+}
+#contents h3 {
+  color: rgb(177, 191, 193);
+  font-size: 30px;
+  font-weight: bold;
+}
+div#contents h4{
+  margin: 15px;
+  letter-spacing: 8px;
+  font-size: 24px;
+  color: white;
+}
+#product > p,
+#policy > p,
+#th > p  {
+  border: 2px solid white;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  padding: 10px;
+  border-radius: 20px;
+}

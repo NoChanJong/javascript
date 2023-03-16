@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    /*
+      함수(function)란?
+
+      1.  함수는 기본적으로 호출된 곳으로 처리결과를 전달해 주는 기능을 한다.
+      2.  함수의 호출은 '함수면()'의 형태로 호출한다.
+      3.  함수의 소괄호안에는 함수로 임의의 값을 전달하는 매개변수(매개값, 인자, 파라미터)가
+          있을 수도 있고 없을 수도 있다.
+      3.  사용자함수의 정의방법
+          1) 익명함수 : 이름이 없는 함수 : function() {...}
+          2) 선언함수 : 이름이 있는 함수 : function 함수명 (매개변수...) {...}
+
+      내장함수와 사용자(정의)함수
+
+      1.  내장함수 : JavaScript에서 기본적으로 제공해 주는 함수를 내장함수라 한다.
+          예) alter, prompt, confirm....
+      2.  사용자(정의)함수
+					1) 익명함수
+					2) 선언함수
+    */
+    // 익명함수
+    let fn01 = function() {
+      // 실행할 문장
+      return '반환된 값';
+    };
+    let result = fn01();
+    console.log(typeof fn01, ',', result);
+    console.log(`${fn01()}`);
+    
+		// 2) 재사용하기 위한 함수
+		let fn02 = function add(a, b) { return a + b;}
+		result = fn02(10, 20);
+    console.log(`10 + 20 = ${result}`);
+    console.log(`100 + 300 = ${fn02(100, 300)}`);
+		
+		// 2. 선언함수
+		function fn03(a, b) { return a * b;}
+		result = fn03(10, 20);
+    console.log(`10 * 20 = ${result}`);
+    console.log(`100 * 300 = ${fn03(100, 300)}`);
+
+		/*
+			실습 1. 계산기 함수(선언함수)를 작성해 보세요
+			매개변수가 3개인 calculator(연산자, 값1, 값2)
+				연산자 : +, -, *, /, %
+				각 연산자에 따라 값1과 값2의 연산결과를 출력
+				document.write(`값1 + 값2 = 결과값`)
+				document.write(`값1 - 값2 = 결과값`)
+				document.write(`값1 * 값2 = 결과값`)
+				document.write(`값1 / 값2 = 결과값`)
+				document.write(`값1 % 값2 = 결과값`)
+		*/
+		let calculator = function(a, b) {
+			return a + b;
+		}
+		result = calculator(10, 20); 
+		document.write(`10 + 20 = ${result}<br>`);
+
+		let calculator2 = function(a, b) {
+			return a * b;
+		}
+		result = calculator2(15, 23); 
+		document.write(`15 * 23 = ${result}<br>`);
+
+		let calculator3 = function(a, b) {
+			return a - b;
+		}
+		result = calculator3(182, 73); 
+		document.write(`182 - 73 = ${result}<br>`);
+
+		let calculator4 = function(a, b) {
+			return a / b;
+		}
+		result = calculator4(94, 2); 
+		document.write(`94 / 2 = ${result}<br>`);
+
+		let calculator5 = function(a, b) {
+			return a % b;
+		}
+		result = calculator5(85, 12); 
+		document.write(`85 % 12 = ${result}`);
+
+		/*
+			JavaScript함수는 내장 함수와 사용자 정의 함수로 분류
+			내장함수는 alert(), prompt(), Number() 등 자바스크립트 내부에 작성된 기능
+			사용자 정의 함수는 function 키워드를 통해서 선언됨.
+
+			사용자 정의 함수
+			alert(), prompt() 와 같은 내장 함수처럼 사용자가 직접 함수를 만들 수 있게해주는 함수
+			
+			사용자 정의 함수 선언 방법
+			ex) function dasima() {
+						document.write('Hello World');
+					}
+					dasima();
+
+			익명함수: 말그대로 이름 없는 함수 -> 익명함수를 사용하기 위해선 변수에 넣어서 사용해야한다.
+			선언함수: 함수를 선언할 때 이름을 붙여주는 함수를 말한다. -> 따로 변수에 넣어주지 않고 선언할 때 붙여준
+								이름으로 호출하면 됨.
+		*/
+  </script>
+</head>
+<body>
+  
+</body>
+</html>
