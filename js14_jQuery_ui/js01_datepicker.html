@@ -27,7 +27,7 @@
   <script>
     $(function() {
       $('#open-button').click(function() {
-        $('#dialog').dialog('open');
+        $('#dialog').dialog('open'); // dialog : 대화상자를 생성
       })
 
       $('#dialog').dialog({
@@ -51,8 +51,8 @@
       })
 
       $('#event_date').datepicker({
-        dateFormat: 'yy.mm.dd',
-        numberOfMonths: 3
+        dateFormat: 'yy.mm.dd', // 일정 선택 후 #output으로 나올 때 '2023.00.00'와 같은 양식으로 나오는 역할
+        numberOfMonths: 3 // 일정 선택시 한번에 3개의 달을 선택할 수 있게 해줌
       })
     })
   </script>

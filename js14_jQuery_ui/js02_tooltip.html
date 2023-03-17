@@ -9,40 +9,54 @@
   <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
   <title>Document</title>
   <style>
-    h1 {
+    /* h1 {
       text-align: center;
     }
     #button {
       padding: 5px;
       margin: 0;
       text-align: center;
+    } */
+
+    p {
+      margin-top: 50px;
+      margin-left: 20px;
+      font-size: 16px;
+      cursor: help; /* 커서 모양을 물음표로 변경 */
     }
   </style>
 
   <script>
+    // $(function() {
+    //   $('#button').hover(
+    //     function () { $(this).addClass('ui-state-hover')},
+    //     function () { $(this).removeClass('ui-state-hover')}
+    //   )
+
+    //   $('#button').click(function() {
+    //     $(this).toggleClass('ui-state-active')
+    //   })
+
+    //   $('h1').hover(
+    //     function () { $(this).addClass('ui-state-hover')},
+    //     function () { $(this).removeClass('ui-state-hover')}
+    //   )
+    // })
+  </script>
+
+  <script>
     $(function() {
-      $('#button').hover(
-        function () { $(this).addClass('ui-state-hover')},
-        function () { $(this).removeClass('ui-state-hover')}
-      )
-
-      $('#button').click(function() {
-        $(this).toggleClass('ui-state-active')
-      })
-
-      $('h1').hover(
-        function () { $(this).addClass('ui-state-hover')},
-        function () { $(this).removeClass('ui-state-hover')}
-      )
+      $(this).tooltip(); // 해당요소에 마우스 올릴시 툴팁 메시지를 보여주게하는 기능
     })
   </script>
 </head>
 <body>
-  <div id="button" class="box ui-state-default ui-coner-all">
+  <p title='this is a tooltip message'>Hover over me.</p>
+  <!-- <div id="button" class="box ui-state-default ui-coner-all">
     <p>콘테 감독은 2021-22시즌 누누 에스피리투 산투 감독의 뒤를 이어 토트넘 지휘봉을 잡았다. 중위권에 허덕이던 팀을 살리는 데 힘 쏟았다. 토트넘 첫 시즌 기세는 매서웠다. 부진에 빠진 해리 케인(29)도 콘테 감독 체제에서 되살아났다. 손흥민(30)은 특급 골잡이로 거듭났다. 
       토트넘은 시즌 막바지 아스널을 극적으로 제치고 4위를 차지했다. 손흥민은 아시아 최초 골든 부트를 받으며 빛났다.</p>
   </div>
 
-  <button id="button" class="box ui-state-default ui-coner-all">Button</button>
+  <button id="button" class="box ui-state-default ui-coner-all">Button</button> -->
 </body>
 </html>
